@@ -33,7 +33,7 @@ class Messaging:
             self.client.username_pw_set(username, password)
 
         port = config.get('port')
-        port = int(port) if port else 1833
+        port = int(port) if port else 1883
         host = config.get('host', defaultHost)
         print("Host: ", host, "port: ", port)
 
